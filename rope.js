@@ -9,7 +9,6 @@ const bot = new rope.Bot({
 bot.onLeave()
 bot.onJoined()
 bot.onMessage()
-const keep_alive = require('./http.js')
 var reader = fs.readdirSync("./komutlar").filter(file => file.endsWith(".js"))
 for (const file of reader) {
 const command = require(`./komutlar/${file}`)
